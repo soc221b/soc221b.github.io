@@ -1,16 +1,11 @@
-<template>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <RouterLink to="/">Home</RouterLink>
-        </li>
-      </ul>
-    </nav>
-    <h1>Hey, I am Ernest, a front-end engineer.</h1>
-  </header>
+<script setup lang="ts">
+import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
+import Footer from '@/components/Footer.vue'
+</script>
 
-  <main>
-    <RouterView />
-  </main>
+<template>
+  <Header></Header>
+  <Main></Main>
+  <Footer></Footer>
 </template>
