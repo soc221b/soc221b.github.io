@@ -1,3 +1,7 @@
 <template>
-  <footer class="container">2023-Present &copy; Ernest</footer>
+  <footer class="container">
+    <p>
+      2023-Present &copy; Ernest
+    </p>
+  </footer>
 </template>
