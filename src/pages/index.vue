@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Project from '@/components/Project.vue'
+import Projects from '@/components/Projects.vue'
 </script>
 
 <template>
@@ -7,5 +7,5 @@ import Project from '@/components/Project.vue'
 
   <hr />
 
-  <Project></Project>
+  <Projects></Projects>
 </template>
