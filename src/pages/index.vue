@@ -3,7 +3,10 @@ import Projects from '@/components/Projects.vue'
 </script>
 
 <template>
-  <h1>Hey, I am Ernest, a front-end engineer.</h1>
+  <h1>Welcome.</h1>
+
+  <p>My name is Ernest, I'm a front-end developer based in Taiwan.</p>
+  <p>I have developed many types of projects from chrome extensions to babel plugins.</p>
 
   <hr />
 

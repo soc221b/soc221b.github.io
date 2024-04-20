@@ -5,6 +5,7 @@ export type Project = {
   status: string
   skills: string[]
   badges?: string[]
+  preview?: string
 }
 
 export type Skill = {
@@ -31,7 +32,8 @@ export const projects: Project[] = [
       'https://img.shields.io/chrome-web-store/users/fohdnlaeecihjiendkfhifhlgldpeopm?labelColor=13171F&color=27292F'
     ],
     skills: ['java script', 'react', 'tailwindcss'],
-    status: 'stable'
+    status: 'stable',
+    preview: 'grpc-devtools.png'
   },
   {
     name: 'Find',
@@ -41,7 +43,8 @@ export const projects: Project[] = [
     skills: ['java script', 'react'],
     badges: [
       'https://img.shields.io/chrome-web-store/users/akaeoepndhnhffnginkbdcoigbpnnljh?labelColor=13171F&color=27292F'
-    ]
+    ],
+    preview: 'find.png'
   },
   {
     name: '@import-meta-env',
@@ -49,7 +52,8 @@ export const projects: Project[] = [
     description: 'Startup/Runtime environment variables solution for JavaScript.',
     status: 'stable',
     skills: ['java script', 'rust', 'unplugin', 'babel', 'swc', 'type script'],
-    badges: ['https://img.shields.io/npm/dw/@import-meta-env/cli?labelColor=13171F&color=27292F']
+    badges: ['https://img.shields.io/npm/dw/@import-meta-env/cli?labelColor=13171F&color=27292F'],
+    preview: 'import-meta-env.png'
   },
   {
     name: '@runtime-env',
@@ -88,7 +92,8 @@ export const projects: Project[] = [
     description: 'Vue JSON inspector with Chrome-like theme.',
     status: 'stable',
     skills: ['java script'],
-    badges: ['https://img.shields.io/npm/dw/object-visualizer?labelColor=13171F&color=27292F']
+    badges: ['https://img.shields.io/npm/dw/object-visualizer?labelColor=13171F&color=27292F'],
+    preview: 'object-visualizer.png'
   },
   {
     name: 'vue-next-select',
@@ -106,14 +111,16 @@ export const projects: Project[] = [
     skills: ['java script', 'vue', 'pinia'],
     badges: [
       'https://img.shields.io/npm/dw/pinia-plugin-persistedstate-2?labelColor=13171F&color=27292F'
-    ]
+    ],
+    preview: 'pinia-plugin-persisted-state-2.png'
   },
   {
     name: 'assistive_touch',
     href: 'https://pub.dev/packages/assistive_touch',
     description: 'A widget just like iPhone Assistive Touch.',
     skills: ['dart', 'flutter'],
-    status: 'stable'
+    status: 'stable',
+    preview: 'assistive-touch.png'
   },
   {
     name: 'element-ui-sticky-table',
@@ -121,7 +128,10 @@ export const projects: Project[] = [
     description: 'Sticky for element-ui table.',
     status: 'stable',
     skills: ['java script'],
-    badges: ['https://img.shields.io/npm/dw/element-ui-sticky-table?labelColor=13171F&color=27292F']
+    badges: [
+      'https://img.shields.io/npm/dw/element-ui-sticky-table?labelColor=13171F&color=27292F'
+    ],
+    preview: 'element-ui-sticky-table.png'
   },
   {
     name: 'namanager',
@@ -134,6 +144,7 @@ export const projects: Project[] = [
   }
 ]
   .sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()))
+  .sort((a, b) => +!!b.preview - +!!a.preview)
   .map((project) => ({
     ...project,
     skills: project.skills.map((skill) => skill.toLowerCase())
