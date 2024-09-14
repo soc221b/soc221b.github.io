@@ -31,4 +31,6 @@ import { projects } from '@/constants'
       </tbody>
     </table>
   </div>
+
+  <br />
 </template>
