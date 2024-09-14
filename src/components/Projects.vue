@@ -6,7 +6,7 @@ import { projects } from '@/constants'
   <h2>Projects</h2>
 
   <div style="overflow-x: auto">
-    <table style="min-width: 360px">
+    <table style="min-width: 600px">
       <thead>
         <tr>
           <th>Project</th>
@@ -22,10 +22,10 @@ import { projects } from '@/constants'
             </a>
           </td>
           <td>
-            <img :src="project.homeBadge" />
+            <img :src="project.homeBadge" height="20" style="min-height: 20px" />
           </td>
           <td>
-            <img :src="project.downloadBadge" />
+            <img :src="project.downloadBadge" height="20" style="min-height: 20px" />
           </td>
         </tr>
       </tbody>
