@@ -67,6 +67,13 @@ export const projects: Project[] = [
     href: 'https://www.npmjs.com/package/zod-schema-faker',
     homeBadge: 'https://img.shields.io/npm/v/zod-schema-faker?labelColor=13171F&color=27292F',
     downloadBadge: 'https://img.shields.io/npm/dw/zod-schema-faker?labelColor=13171F&color=27292F'
+  },
+  {
+    name: 'ngx-exhaustive-check',
+    href: 'https://www.npmjs.com/package/ngx-exhaustive-check',
+    homeBadge: 'https://img.shields.io/npm/v/ngx-exhaustive-check?labelColor=13171F&color=27292F',
+    downloadBadge:
+      'https://img.shields.io/npm/dw/ngx-exhaustive-check?labelColor=13171F&color=27292F'
   }
 ]
   .sort((a, b) => a.name.localeCompare(b.name))
