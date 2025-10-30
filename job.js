@@ -8,7 +8,7 @@
 // @match        https://*.104.com.tw/*
 // @grant        GM_addElement
 // ==/UserScript==
-
+console.log('qweqwe')
 const cookieName = "data-104";
 const anchorSelector = [
   "a.info-job__text",
